@@ -37,3 +37,36 @@ body {
   color: white;
   opacity: 0.9;
 }
+
+.right-Container {
+  display: block;
+  margin-left: auto;
+}
+
+.search-box {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  color: white;
+  width: 250px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.search-box:focus {
+  width: 400px;
+  border-color: blue;
+}
+.sub-btn {
+  background-color: blue;
+  height: 30px;
+  padding: 0 20px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.login-link {
+}
