@@ -4,7 +4,7 @@ let movies = [
     description:
       "Falcon y Winter Soldier, Falcon y el Soldado de Invierno en Latinoamerica, sigue la historia de Sam Wilson y Bucky Barnes tras los acontecimientos de Vengadores: Endgame, donde deben lidiar con el legado de poder llegar a ser el nuevo Capitán América , Steve Rogers ha dejado atrás su papel de superhéroe tras entregar las gemas del infinito a su correspondiente línea temporal, otorgando así su escudo a Falcon. Sin embargo, éste no está muy de acuerdo de seguir su legado porque cree que solo hay un Capitán América y es él Aunque su relación nunca han sido de mejores amigos, Falcon y el Soldado de Invierno deben luchar juntos contra una nueva amenaza, mientras también deben lidiar con sus problemas personales, como es el caso de Bucky y sus pesadillas por su pasado",
 
-    image: "./images//slider 2.png",
+    image: "./images/slider 2.png",
   },
   {
     name: "loki",
@@ -32,6 +32,6 @@ let movies = [
     description:
       "Ambientada en un precioso pueblo italiano costero (está claramente inspirada en los pueblos de la zona conocida como Cinque Terre), esta historia de convivencia entre lugareños y monstruos marinos parece una metáfora sobre la inmigración. Quizás en algunos aspectos es demasiado amable, pero está claro que estamos hablando de una película de animación dirigida a los pequeños y las pequeñas y ello hace que el mensaje siempre se simplifique. En cuanto a la animación, no es de las más destacadas de la compañía ni mucho menos, es más bien simple pero efectista, sobre todo en el colorido, pero la aventura es bastante entretenida.",
 
-    image: "./images//slider 1.png",
+    image: "./images/slider 5.png",
   },
 ];
