@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +10,7 @@ body {
   width: 100%;
   background-color: black;
   position: relative;
+  font-family: "Comfortaa", cursive;
 }
 
 .navbar {
@@ -56,8 +59,9 @@ body {
   transition: 0.5s;
 }
 .search-box:focus {
-  width: 400px;
+  width: 300px;
   border-color: blue;
+  color: red;
 }
 .sub-btn {
   background-color: blue;
@@ -67,6 +71,81 @@ body {
   border-radius: 5px;
   border: none;
   outline: none;
+  text-transform: uppercase;
+  font-weight: 700px;
+  font-size: 12px;
+  margin: 0 10px;
 }
 .login-link {
+  color: white;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  padding: 20px 0;
+  overflow-x: hidden;
+  margin-top: 80px;
+}
+.carousel {
+  display: flex;
+  width: 92%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #181414;
+}
+
+.slider {
+  /* in this way , so it will schrink */
+  flex: 0 0 auto;
+  margin-right: 30px;
+  position: relative;
+  background-color: rgba(5, 34, 88, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 70%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+}
+
+.slide_content {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, #030b17 80%, #00000000);
+  /* background: transparent; */
+  color: white;
+}
+
+.movie-title {
+  padding-left: 50px;
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+
+.movie-description {
+  /* background-color: aquamarine; */
+  width: 70%;
+  padding-left: 50px;
+  line-height: 20px;
+  margin-top: 30px;
+  opacity: 0.8;
+  text-align: justify;
 }
