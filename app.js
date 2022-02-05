@@ -96,10 +96,30 @@ const createSlide = () => {
 for (let i = 0; i < 5; i++) {
   createSlide();
 }
-try {
-  setInterval(() => {
-    createSlide();
-  }, 5000);
-} catch (error) {
-  console.log(error);
-}
+// try {
+//   setInterval(() => {
+//     createSlide();
+//   }, 5000);
+// } catch (error) {
+//   console.log(error);
+// }
+
+//=================--> TO PLAY DE VIDEOS.
+
+const videoCards = [...document.querySelectorAll(".video-card")]; // cojiendo todos los selectores. de video-cards para poder iterarlos despues
+
+console.log(videoCards, "Soy video Cards");
+
+//
+
+videoCards.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    // al poner el mouse se empize a ejecutar el video.
+    let video = item.children[1];
+    video.play();
+  });
+  item.addEventListener("mouseleave", () => {
+    let video = item.children[1]; // al quitar el hover se ejecuta la pausa
+    video.pause();
+  });
+});

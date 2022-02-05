@@ -156,3 +156,46 @@ body {
   /* overflow: scroll;
   scroll-behavior: smooth; */
 }
+
+/* ============ video */
+
+.video-card-container {
+  position: relative;
+  width: 92%;
+  height: 10vw;
+  margin: auto;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.video-card {
+  position: relative;
+  min-width: calc(100% / 5- 10px);
+  width: calc(100% / 5- 10px);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: red;
+}
+
+.video-card-image,
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-video {
+  position: absolute;
+}
+
+.video-card:hover,
+.video-card-image {
+  display: flex;
+}
+
+.video-card:hover {
+  border: solid 3px rgb(245, 244, 244);
+  transition: 0.5s;
+}
