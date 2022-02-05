@@ -198,4 +198,128 @@ body {
 .video-card:hover {
   border: solid 3px rgb(245, 244, 244);
   transition: 0.5s;
+  transform: scale(1);
+}
+
+.title {
+  color: whitesmoke;
+  opacity: 0.9;
+  padding-left: 4%;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+/* ============ movies cards */
+.movies-list {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.card-container {
+  position: absolute;
+  width: 92%;
+  padding-left: 10px;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  /* aqui ojo en oveflow x, para que se pueda  poner  el estado del scroll. , 
+   Check out, !  please take care of the scroll -behavor  from x to 
+  */
+  overflow-x: none;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+.card-container ::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  position: relative;
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: 0.5s;
+  background-color: aqua;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover,
+.card-body {
+  opacity: 1;
+}
+
+.card-body {
+  /* opacity to block all info in front */
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+  padding: 10px;
+  transition: 0.5s;
+}
+.name {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 60%;
+}
+
+.des {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+.watching-btn {
+  position: relative;
+  width: 100%;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  font-weight: 500;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.watching-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 35px;
+  width: 35px;
+  background-image: url("./images/add.png");
+  background-size: cover;
+  transform: scale(0.4);
+}
+
+.card:hover {
+  border: solid 1px rgb(245, 244, 244);
+  transform: scale(1.05);
+}
+
+.watching-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
 }

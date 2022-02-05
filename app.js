@@ -56,7 +56,7 @@ const createSlide = () => {
   const h1 = document.createElement("h1");
   const p = document.createElement("p");
 
-  //=================-->  now I m attach all elements.
+  //!=================-->  now I m attach all elements.
 
   imgElement.appendChild(document.createTextNode(""));
   h1.appendChild(document.createTextNode(movies[slideIndex].name));
@@ -73,7 +73,7 @@ const createSlide = () => {
   imgElement.src = movies[slideIndex].image;
   slideIndex++; // important to set  the increase value in 1. if not the carrousel not  go as plan.
 
-  //=================--> setting elements className
+  //!=================--> setting elements className
   slide.className = "slider";
   content.className = "slide_content";
   h1.className = "movie-title";
@@ -96,15 +96,15 @@ const createSlide = () => {
 for (let i = 0; i < 5; i++) {
   createSlide();
 }
-// try {
-//   setInterval(() => {
-//     createSlide();
-//   }, 5000);
-// } catch (error) {
-//   console.log(error);
-// }
+try {
+  setInterval(() => {
+    createSlide();
+  }, 3000);
+} catch (error) {
+  console.log(error);
+}
 
-//=================--> TO PLAY DE VIDEOS.
+//!=================--> TO PLAY DE VIDEOS.
 
 const videoCards = [...document.querySelectorAll(".video-card")]; // cojiendo todos los selectores. de video-cards para poder iterarlos despues
 
